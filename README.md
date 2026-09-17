@@ -1,4 +1,4 @@
-# AI39 — MemoryGuard
+# HATAO
 
 Complete local hackathon application for EAI39: AI Model Memory Deletion Verification Tool.
 
