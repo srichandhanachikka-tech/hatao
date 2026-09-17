@@ -1,0 +1,8 @@
+__pycache__/
+.venv/
+venv/
+*.pyc
+ai39.db
+AI39_*_report.json
+uploads/*
+!uploads/.gitkeep

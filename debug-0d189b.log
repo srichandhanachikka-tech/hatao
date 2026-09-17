@@ -1,0 +1,130 @@
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 1}, "timestamp": 1789630911808}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 1}, "timestamp": 1789630913292}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 1}, "timestamp": 1789630920964}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 2}, "timestamp": 1789630920969}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:audit", "message": "audit write start", "data": {"event": "MEMORY_CREATED", "open_conns": 2}, "timestamp": 1789630920994}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 3}, "timestamp": 1789630920996}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:audit", "message": "audit write start", "data": {"event": "MEMORY_PROPAGATED", "open_conns": 3}, "timestamp": 1789630921011}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 4}, "timestamp": 1789630921012}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 5}, "timestamp": 1789630921027}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 6}, "timestamp": 1789630921030}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:audit", "message": "audit write start", "data": {"event": "DELETION_REQUESTED", "open_conns": 6}, "timestamp": 1789630921048}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 7}, "timestamp": 1789630921050}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 8}, "timestamp": 1789630921062}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 9}, "timestamp": 1789630921065}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 10}, "timestamp": 1789630921068}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:run_verify", "message": "before commit/close", "data": {"did": null, "did_truthy": false, "vid": "VER-84986C0C", "open_conns": 10, "in_transaction": true}, "timestamp": 1789630921076}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:run_verify", "message": "after commit/close", "data": {"did": null, "closed": true, "open_conns": 10, "in_transaction": false}, "timestamp": 1789630921086}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:audit", "message": "audit write start", "data": {"event": "VERIFICATION_SCAN_STARTED", "open_conns": 10}, "timestamp": 1789630921087}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 11}, "timestamp": 1789630921089}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:audit", "message": "audit write start", "data": {"event": "STORE_CHECKED", "open_conns": 11}, "timestamp": 1789630921099}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 12}, "timestamp": 1789630921100}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:audit", "message": "audit write start", "data": {"event": "RESIDUAL_DETECTED", "open_conns": 12}, "timestamp": 1789630921110}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 13}, "timestamp": 1789630921111}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:audit", "message": "audit write start", "data": {"event": "STORE_CHECKED", "open_conns": 13}, "timestamp": 1789630921119}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 14}, "timestamp": 1789630921120}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:audit", "message": "audit write start", "data": {"event": "RESIDUAL_DETECTED", "open_conns": 14}, "timestamp": 1789630921129}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 15}, "timestamp": 1789630921130}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:audit", "message": "audit write start", "data": {"event": "STORE_CHECKED", "open_conns": 15}, "timestamp": 1789630921141}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 16}, "timestamp": 1789630921142}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:audit", "message": "audit write start", "data": {"event": "RESIDUAL_DETECTED", "open_conns": 16}, "timestamp": 1789630921151}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 17}, "timestamp": 1789630921151}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:audit", "message": "audit write start", "data": {"event": "STORE_CHECKED", "open_conns": 17}, "timestamp": 1789630921160}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 18}, "timestamp": 1789630921161}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:audit", "message": "audit write start", "data": {"event": "RESIDUAL_DETECTED", "open_conns": 18}, "timestamp": 1789630921169}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 19}, "timestamp": 1789630921169}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:audit", "message": "audit write start", "data": {"event": "STORE_CHECKED", "open_conns": 19}, "timestamp": 1789630921178}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 20}, "timestamp": 1789630921178}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:audit", "message": "audit write start", "data": {"event": "RESIDUAL_DETECTED", "open_conns": 20}, "timestamp": 1789630921187}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 21}, "timestamp": 1789630921188}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:audit", "message": "audit write start", "data": {"event": "VERIFICATION_COMPLETED", "open_conns": 21}, "timestamp": 1789630921196}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 22}, "timestamp": 1789630921197}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 23}, "timestamp": 1789630921205}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 1}, "timestamp": 1789631065962}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 2}, "timestamp": 1789631082023}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 3}, "timestamp": 1789631085994}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 4}, "timestamp": 1789631100327}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:audit", "message": "audit write start", "data": {"event": "MEMORY_CREATED", "open_conns": 4}, "timestamp": 1789631100368}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 5}, "timestamp": 1789631100372}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:audit", "message": "audit write start", "data": {"event": "MEMORY_PROPAGATED", "open_conns": 5}, "timestamp": 1789631100392}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 6}, "timestamp": 1789631100396}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 7}, "timestamp": 1789631100423}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 8}, "timestamp": 1789631108407}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 9}, "timestamp": 1789631108414}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:audit", "message": "audit write start", "data": {"event": "DELETION_REQUESTED", "open_conns": 9}, "timestamp": 1789631108447}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 10}, "timestamp": 1789631108454}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 11}, "timestamp": 1789631108838}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 12}, "timestamp": 1789631108845}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 13}, "timestamp": 1789631108849}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:run_verify", "message": "before commit/close", "data": {"did": null, "did_truthy": false, "vid": "VER-EEB43A1C", "open_conns": 13, "in_transaction": true}, "timestamp": 1789631108863}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:run_verify", "message": "after commit/close", "data": {"did": null, "closed": true, "open_conns": 13, "in_transaction": false}, "timestamp": 1789631108880}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:audit", "message": "audit write start", "data": {"event": "VERIFICATION_SCAN_STARTED", "open_conns": 13}, "timestamp": 1789631108883}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 14}, "timestamp": 1789631108887}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:audit", "message": "audit write start", "data": {"event": "STORE_CHECKED", "open_conns": 14}, "timestamp": 1789631108905}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 15}, "timestamp": 1789631108909}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:audit", "message": "audit write start", "data": {"event": "RESIDUAL_DETECTED", "open_conns": 15}, "timestamp": 1789631108926}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 16}, "timestamp": 1789631108929}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:audit", "message": "audit write start", "data": {"event": "STORE_CHECKED", "open_conns": 16}, "timestamp": 1789631108948}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 17}, "timestamp": 1789631108950}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:audit", "message": "audit write start", "data": {"event": "RESIDUAL_DETECTED", "open_conns": 17}, "timestamp": 1789631108968}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 18}, "timestamp": 1789631108970}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:audit", "message": "audit write start", "data": {"event": "STORE_CHECKED", "open_conns": 18}, "timestamp": 1789631108988}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 19}, "timestamp": 1789631108990}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:audit", "message": "audit write start", "data": {"event": "RESIDUAL_DETECTED", "open_conns": 19}, "timestamp": 1789631109007}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 20}, "timestamp": 1789631109012}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:audit", "message": "audit write start", "data": {"event": "STORE_CHECKED", "open_conns": 20}, "timestamp": 1789631109051}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 21}, "timestamp": 1789631109058}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:audit", "message": "audit write start", "data": {"event": "RESIDUAL_DETECTED", "open_conns": 21}, "timestamp": 1789631109085}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 22}, "timestamp": 1789631109091}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:audit", "message": "audit write start", "data": {"event": "STORE_CHECKED", "open_conns": 22}, "timestamp": 1789631109114}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 23}, "timestamp": 1789631109117}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:audit", "message": "audit write start", "data": {"event": "RESIDUAL_DETECTED", "open_conns": 23}, "timestamp": 1789631109141}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 24}, "timestamp": 1789631109143}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:audit", "message": "audit write start", "data": {"event": "VERIFICATION_COMPLETED", "open_conns": 24}, "timestamp": 1789631109168}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 25}, "timestamp": 1789631109186}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 26}, "timestamp": 1789631109224}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 27}, "timestamp": 1789631109251}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 28}, "timestamp": 1789631109301}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 29}, "timestamp": 1789631131898}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:audit", "message": "audit write start", "data": {"event": "MEMORY_CREATED", "open_conns": 29}, "timestamp": 1789631131918}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 30}, "timestamp": 1789631131920}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:audit", "message": "audit write start", "data": {"event": "MEMORY_PROPAGATED", "open_conns": 30}, "timestamp": 1789631131936}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 31}, "timestamp": 1789631131939}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 32}, "timestamp": 1789631131956}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 33}, "timestamp": 1789631134999}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 34}, "timestamp": 1789631135005}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:audit", "message": "audit write start", "data": {"event": "DELETION_REQUESTED", "open_conns": 34}, "timestamp": 1789631135044}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 35}, "timestamp": 1789631135047}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 36}, "timestamp": 1789631135444}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 37}, "timestamp": 1789631135449}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 38}, "timestamp": 1789631135453}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:run_verify", "message": "before commit/close", "data": {"did": null, "did_truthy": false, "vid": "VER-A7FBA169", "open_conns": 38, "in_transaction": true}, "timestamp": 1789631135463}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:run_verify", "message": "after commit/close", "data": {"did": null, "closed": true, "open_conns": 38, "in_transaction": false}, "timestamp": 1789631135483}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:audit", "message": "audit write start", "data": {"event": "VERIFICATION_SCAN_STARTED", "open_conns": 38}, "timestamp": 1789631135486}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 39}, "timestamp": 1789631135490}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:audit", "message": "audit write start", "data": {"event": "STORE_CHECKED", "open_conns": 39}, "timestamp": 1789631135511}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 40}, "timestamp": 1789631135513}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:audit", "message": "audit write start", "data": {"event": "RESIDUAL_DETECTED", "open_conns": 40}, "timestamp": 1789631135528}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 41}, "timestamp": 1789631135530}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:audit", "message": "audit write start", "data": {"event": "STORE_CHECKED", "open_conns": 41}, "timestamp": 1789631135549}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 42}, "timestamp": 1789631135551}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:audit", "message": "audit write start", "data": {"event": "RESIDUAL_DETECTED", "open_conns": 42}, "timestamp": 1789631135570}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 43}, "timestamp": 1789631135572}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:audit", "message": "audit write start", "data": {"event": "STORE_CHECKED", "open_conns": 43}, "timestamp": 1789631135587}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 44}, "timestamp": 1789631135588}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:audit", "message": "audit write start", "data": {"event": "RESIDUAL_DETECTED", "open_conns": 44}, "timestamp": 1789631135605}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 45}, "timestamp": 1789631135607}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:audit", "message": "audit write start", "data": {"event": "STORE_CHECKED", "open_conns": 45}, "timestamp": 1789631135625}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 46}, "timestamp": 1789631135627}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:audit", "message": "audit write start", "data": {"event": "RESIDUAL_DETECTED", "open_conns": 46}, "timestamp": 1789631135659}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 47}, "timestamp": 1789631135661}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:audit", "message": "audit write start", "data": {"event": "STORE_CHECKED", "open_conns": 47}, "timestamp": 1789631135682}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 48}, "timestamp": 1789631135685}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:audit", "message": "audit write start", "data": {"event": "RESIDUAL_DETECTED", "open_conns": 48}, "timestamp": 1789631135705}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 49}, "timestamp": 1789631135708}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "A", "location": "main.py:audit", "message": "audit write start", "data": {"event": "VERIFICATION_COMPLETED", "open_conns": 49}, "timestamp": 1789631135730}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 50}, "timestamp": 1789631135734}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 51}, "timestamp": 1789631135758}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 52}, "timestamp": 1789631135774}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 53}, "timestamp": 1789631135788}
+{"sessionId": "0d189b", "runId": "post-fix", "hypothesisId": "B", "location": "main.py:conn", "message": "sqlite connect", "data": {"open_conns": 54}, "timestamp": 1789631150125}
