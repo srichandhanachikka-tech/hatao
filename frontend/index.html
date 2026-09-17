@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -14,577 +15,843 @@
     <b>◈ AI39 <i>/ HATAO</i></b>
     <small>AI Model Memory Deletion Verification Tool</small>
   </div>
-  <span class="env">SYNTHETIC / APPROVED TEST DATA ONLY</span>
+
+  <span class="env">
+    SYNTHETIC / APPROVED TEST DATA ONLY
+  </span>
 </header>
 
+
 <aside>
-  <button class="nav active" data-page="dashboard">⌂ Dashboard</button>
-  <button class="nav" data-page="chat">◉ Test Chatbot</button>
-  <button class="nav" data-page="evaluation">▣ Evaluation</button>
-  <button class="nav" data-page="audit">≋ Audit Trail</button>
+
+  <button class="nav active" data-page="dashboard">
+    ⌂ Dashboard
+  </button>
+
+  <button class="nav" data-page="chat">
+    ◉ Test Chatbot
+  </button>
+
+  <button class="nav" data-page="evaluation">
+    ▣ Evaluation
+  </button>
+
+  <button class="nav" data-page="audit">
+    ≋ Audit Trail
+  </button>
+
 </aside>
+
 
 <main>
 
-  <div id="toast"></div>
+<div id="toast"></div>
 
-  <!-- ================= DASHBOARD ================= -->
 
-  <section id="dashboard" class="page active">
+<!-- ============================================================
+     DASHBOARD
+============================================================ -->
 
-    <div class="head">
-      <div>
-        <label>CONTROL CENTER</label>
-        <h1>Deletion verification</h1>
-        <p>
-          Test whether synthetic memory remains retrievable after deletion.
-        </p>
-      </div>
+<section id="dashboard" class="page active">
 
-      <button class="primary" onclick="page('chat')">
-        ＋ New verification
-      </button>
+  <div class="head">
+
+    <div>
+      <label>CONTROL CENTER</label>
+
+      <h1>Deletion verification</h1>
+
+      <p>
+        Test whether synthetic memory remains retrievable after deletion.
+      </p>
     </div>
 
-    <div class="notice">
-      <b>Scope:</b>
-      This prototype demonstrates a verification methodology using a
-      controlled synthetic AI-memory environment.
-      <br>
-      Synthetic / approved test data only.
-      It does not claim to delete or verify data inside ChatGPT or another
-      third-party AI service.
+    <button class="primary" onclick="page('chat')">
+      ＋ New verification
+    </button>
+
+  </div>
+
+
+  <div class="notice">
+
+    <b>Scope:</b>
+
+    This prototype demonstrates a verification methodology using a
+    controlled synthetic AI-memory environment.
+
+    <br>
+
+    Synthetic / approved test data only.
+
+    It does not claim to delete or verify data inside ChatGPT or another
+    third-party AI service.
+
+  </div>
+
+
+  <div class="metrics">
+
+    <div>
+      <span>Total memories</span>
+      <strong id="total">0</strong>
     </div>
 
-    <div class="metrics">
-      <div>
-        <span>Total memories</span>
-        <strong id="total">0</strong>
-      </div>
-
-      <div>
-        <span>Verified tests</span>
-        <strong id="verified">0</strong>
-      </div>
-
-      <div>
-        <span>Residual-risk tests</span>
-        <strong id="riskcount">0</strong>
-      </div>
-
-      <div>
-        <span>Human reviews</span>
-        <strong id="reviews">0</strong>
-      </div>
+    <div>
+      <span>Verified tests</span>
+      <strong id="verified">0</strong>
     </div>
 
-    <div class="cols">
-
-      <article>
-        <div class="section-title">
-          <h3>Latest verification</h3>
-          <em id="latestpill">NO RUN</em>
-        </div>
-
-        <div id="latest" class="empty">
-          Run a verification to see live evidence.
-        </div>
-      </article>
-
-      <article>
-
-        <div class="section-title">
-          <h3>Quick failure scenarios</h3>
-          <small>one click</small>
-        </div>
-
-        <div class="scenarios">
-
-          <button onclick="scenario('complete')">
-            ✓ Complete deletion
-          </button>
-
-          <button onclick="scenario('embedding')">
-            ⚠ Embedding residual
-          </button>
-
-          <button onclick="scenario('downstream')">
-            ⚠ Downstream residual
-          </button>
-
-          <button onclick="scenario('multiple')">
-            ⚠ Multiple residuals
-          </button>
-
-        </div>
-
-      </article>
-
+    <div>
+      <span>Residual-risk tests</span>
+      <strong id="riskcount">0</strong>
     </div>
 
-  </section>
-
-
-  <!-- ================= CHATBOT ================= -->
-
-  <section id="chat" class="page">
-
-    <div class="head">
-
-      <div>
-        <label>TEST ENVIRONMENT</label>
-
-        <h1>AI39 Test Chatbot</h1>
-
-        <p>
-          Simulate memory creation, retrieval and deletion in a controlled
-          synthetic environment.
-        </p>
-      </div>
-
+    <div>
+      <span>Human reviews</span>
+      <strong id="reviews">0</strong>
     </div>
 
+  </div>
 
-    <div class="privacy-banner">
-      <span>🔒</span>
 
-      <div>
-        <b>Privacy-safe testing environment</b>
-        <p>
-          Use synthetic information only. This chatbot does not connect to
-          a real AI model.
-        </p>
-      </div>
-    </div>
+  <div class="cols">
 
+    <article>
 
-    <div class="cols chatcols">
+      <div class="section-title">
 
-      <!-- CHAT -->
+        <h3>Latest verification</h3>
 
-      <article class="chat">
-
-        <div class="chathead">
-          <span class="status-dot"></span>
-          AI39 Test Chatbot
-          <span class="simulated">SIMULATED</span>
-        </div>
-
-
-        <div id="log" class="chatlog">
-
-          <div class="message bot-message">
-            <div class="avatar">AI</div>
-
-            <div class="bubble bot">
-              Hello! I'm HATAO.How can I help you?
-            </div>
-          </div>
-
-        </div>
-
-
-        <div class="quick">
-
-          <button onclick="demo('My favorite color is blue.')">
-            💬 Favorite color
-          </button>
-
-          <button onclick="demo('PROJECT-AURORA-123 is my synthetic test secret.')">
-            🔐 Test secret
-          </button>
-
-          <button onclick="demo('I enjoy synthetic mystery stories.')">
-            📚 Interest
-          </button>
-
-        </div>
-
-
-        <div class="composer">
-
-          <textarea
-            id="text"
-            placeholder="Type a synthetic message..."
-            onkeydown="handleChatKey(event)"
-          ></textarea>
-
-          <button
-            class="send-button"
-            onclick="sendMessage()"
-            title="Send"
-          >
-            ➤
-          </button>
-
-        </div>
-
-
-        <div class="chat-hint">
-          Try: "My favorite color is blue" · "What is my favorite color?" ·
-          "Delete my memory"
-        </div>
-
-
-        <div class="upload">
-
-          <label>
-            ＋ Store Test Image
-
-            <input
-              id="img"
-              type="file"
-              accept="image/*"
-              onchange="upload()"
-            >
-          </label>
-
-          <small>
-            Max 5 MB • synthetic/approved images only
-          </small>
-
-        </div>
-
-      </article>
-
-
-      <!-- MEMORY ARCHITECTURE -->
-
-      <article>
-
-        <div class="section-title">
-          <h3>Memory architecture</h3>
-          <code id="mid">—</code>
-        </div>
-
-
-        <div class="arch">
-
-          <div class="arch-line"></div>
-
-          <div class="node mainnode">
-
-            <div class="node-icon">🧠</div>
-
-            <b>Original Memory</b>
-
-            <span id="n-original">ACTIVE</span>
-
-          </div>
-
-
-          <div class="connector">↓</div>
-
-
-          <div class="row">
-
-            <div class="node">
-
-              <b>Summary Store</b>
-
-              <span id="n-summary">ACTIVE</span>
-
-            </div>
-
-
-            <div class="node">
-
-              <b>Embedding Store</b>
-
-              <span id="n-embedding">ACTIVE</span>
-
-            </div>
-
-
-            <div class="node">
-
-              <b>Cache</b>
-
-              <span id="n-cache">ACTIVE</span>
-
-            </div>
-
-          </div>
-
-
-          <div class="connector">↓</div>
-
-
-          <div class="node downstream">
-
-            <b>Downstream Copy</b>
-
-            <span id="n-downstream">ACTIVE</span>
-
-          </div>
-
-        </div>
-
-
-        <hr>
-
-
-        <div class="memory-id-box">
-
-          <span>Current memory</span>
-
-          <strong id="memoryStatus">No memory created</strong>
-
-        </div>
-
-
-        <button
-          id="del"
-          class="danger wide"
-          disabled
-          onclick="deleteMemory()"
-        >
-          🗑 DELETE MY MEMORY
-        </button>
-
-        <small class="disclaimer">
-          Audit/version evidence is retained so the deletion result can be
-          tested.
-        </small>
-
-      </article>
-
-    </div>
-
-
-    <!-- VERIFICATION RESULT -->
-
-    <article id="result" class="result hidden">
-
-      <div class="resulttop">
-
-        <div>
-          <label>VERIFICATION RESULT</label>
-          <h2 id="rtitle">—</h2>
-        </div>
-
-        <div class="scorebox">
-          <strong id="score">0%</strong>
-          <small>deletion completeness</small>
-        </div>
+        <em id="latestpill">
+          NO RUN
+        </em>
 
       </div>
 
-
-      <div class="resultstats">
-
-        <div>
-          Retrieval
-          <strong id="retrieval">—</strong>
-        </div>
-
-        <div>
-          Residual risk
-          <strong id="rrisk">—</strong>
-        </div>
-
-        <div>
-          Residual stores
-          <strong id="rcount">None</strong>
-        </div>
-
-        <div>
-          Coverage
-          <strong id="rcover">—</strong>
-        </div>
-
-        <div>
-          Reviewer
-          <strong id="rreview">—</strong>
-        </div>
-
-      </div>
-
-
-      <h3>Storage verification</h3>
-
-      <div id="stores"></div>
-
-      <div id="evidence" class="evidence"></div>
-
-
-      <!-- HUMAN REVIEW -->
-
-      <div id="reviewbox" class="review hidden">
-
-        <h3>👤 Human review required</h3>
-
-        <p>
-          <b>AI39 FINDING</b> —
-          residual memory was detected after simulated deletion.
-          AI39 reports evidence; it does not replace a high-impact
-          human decision.
-        </p>
-
-        <p id="finding"></p>
-
-        <input
-          id="reviewer"
-          placeholder="Reviewer name"
-        >
-
-        <select id="decision">
-          <option value="CONFIRM_FINDING">
-            Confirm finding
-          </option>
-
-          <option value="INVESTIGATE">
-            Investigate
-          </option>
-        </select>
-
-        <textarea
-          id="comments"
-          placeholder="Reviewer comments"
-        ></textarea>
-
-        <button class="primary" onclick="submitReview()">
-          Submit review
-        </button>
-
-      </div>
-
-
-      <div class="actions">
-
-        <button onclick="page('audit')">
-          View audit trail
-        </button>
-
-        <button onclick="report()">
-          Generate report
-        </button>
-
+      <div id="latest" class="empty">
+        Run a verification to see live evidence.
       </div>
 
     </article>
-
-  </section>
-
-
-  <!-- ================= EVALUATION ================= -->
-
-  <section id="evaluation" class="page">
-
-    <div class="head">
-
-      <div>
-
-        <label>CONTROL EVALUATION</label>
-
-        <h1>Evaluation & failure analysis</h1>
-
-        <p>
-          Metrics are calculated from labeled synthetic control scenarios.
-        </p>
-
-      </div>
-
-    </div>
-
-
-    <div class="metrics six">
-
-      <div>
-        <span>Precision</span>
-        <strong id="precision">—</strong>
-      </div>
-
-      <div>
-        <span>Recall</span>
-        <strong id="recall">—</strong>
-      </div>
-
-      <div>
-        <span>True positives</span>
-        <strong id="tp">—</strong>
-      </div>
-
-      <div>
-        <span>False positives</span>
-        <strong id="fp">—</strong>
-      </div>
-
-      <div>
-        <span>True negatives</span>
-        <strong id="tn">—</strong>
-      </div>
-
-      <div>
-        <span>False negatives</span>
-        <strong id="fn">—</strong>
-      </div>
-
-    </div>
-
-
-    <div class="cols">
-
-      <article>
-
-        <h3>Labeled test cases</h3>
-
-        <div id="cases"></div>
-
-      </article>
-
-
-      <article>
-
-        <h3>Failure-case analysis</h3>
-
-        <div id="failures"></div>
-
-        <div class="notice">
-          These controls are synthetic.
-          A real deployment needs representative approved test suites
-          and independent validation.
-        </div>
-
-      </article>
-
-    </div>
-
-  </section>
-
-
-  <!-- ================= AUDIT ================= -->
-
-  <section id="audit" class="page">
-
-    <div class="head">
-
-      <div>
-
-        <label>TRACEABILITY</label>
-
-        <h1>Audit trail</h1>
-
-        <p>
-          Timestamped memory, deletion, verification and review events.
-        </p>
-
-      </div>
-
-      <button onclick="loadAudit()">
-        ↻ Refresh
-      </button>
-
-    </div>
 
 
     <article>
 
-      <div id="timeline"></div>
+      <div class="section-title">
+
+        <h3>Quick failure scenarios</h3>
+
+        <small>one click</small>
+
+      </div>
+
+
+      <div class="scenarios">
+
+        <button onclick="scenario('complete')">
+          ✓ Complete deletion
+        </button>
+
+        <button onclick="scenario('embedding')">
+          ⚠ Embedding residual
+        </button>
+
+        <button onclick="scenario('downstream')">
+          ⚠ Downstream residual
+        </button>
+
+        <button onclick="scenario('multiple')">
+          ⚠ Multiple residuals
+        </button>
+
+      </div>
 
     </article>
 
-  </section>
+  </div>
+
+</section>
+
+
+
+<!-- ============================================================
+     CHATBOT
+============================================================ -->
+
+<section id="chat" class="page">
+
+  <div class="head">
+
+    <div>
+
+      <label>TEST ENVIRONMENT</label>
+
+      <h1>AI39 Test Chatbot</h1>
+
+      <p>
+        Simulate memory creation, retrieval and deletion in a controlled
+        synthetic environment.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <div class="privacy-banner">
+
+    <span>🔒</span>
+
+    <div>
+
+      <b>Privacy-safe testing environment</b>
+
+      <p>
+        Use synthetic information only. This chatbot does not connect to
+        a real AI model.
+      </p>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="cols chatcols">
+
+
+    <!-- ========================================================
+         CHAT
+    ======================================================== -->
+
+    <article class="chat">
+
+      <div class="chathead">
+
+        <span class="status-dot"></span>
+
+        AI39 Test Chatbot
+
+        <span class="simulated">
+          SIMULATED
+        </span>
+
+      </div>
+
+
+      <div id="log" class="chatlog">
+
+        <div class="message bot-message">
+
+          <div class="avatar">
+            AI
+          </div>
+
+          <div class="bubble bot">
+            Hello! I'm HATAO. How can I help you?
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="quick">
+
+        <button onclick="demo('My favorite color is blue.')">
+          💬 Favorite color
+        </button>
+
+        <button onclick="demo('PROJECT-AURORA-123 is my synthetic test secret.')">
+          🔐 Test secret
+        </button>
+
+        <button onclick="demo('I enjoy synthetic mystery stories.')">
+          📚 Interest
+        </button>
+
+      </div>
+
+
+      <div class="composer">
+
+        <textarea
+          id="text"
+          placeholder="Type a synthetic message..."
+        ></textarea>
+
+        <button
+          class="send-button"
+          onclick="sendChat()"
+          title="Send"
+        >
+          ➤
+        </button>
+
+      </div>
+
+
+      <div class="chat-hint">
+
+        Try:
+        "My favorite color is blue" ·
+        "What is my favorite color?" ·
+        "Delete my memory"
+
+      </div>
+
+
+      <div class="upload">
+
+        <label>
+
+          ＋ Store Test Image
+
+          <input
+            id="img"
+            type="file"
+            accept="image/*"
+            onchange="upload()"
+          >
+
+        </label>
+
+        <small>
+          Max 5 MB • synthetic/approved images only
+        </small>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- ========================================================
+         MEMORY ARCHITECTURE
+    ======================================================== -->
+
+    <article>
+
+      <div class="section-title">
+
+        <h3>Memory architecture</h3>
+
+        <code id="mid">—</code>
+
+      </div>
+
+
+      <div class="arch">
+
+        <div class="arch-line"></div>
+
+
+        <div class="node mainnode">
+
+          <div class="node-icon">
+            🧠
+          </div>
+
+          <b>Original Memory</b>
+
+          <span id="n-original">
+            ACTIVE
+          </span>
+
+        </div>
+
+
+        <div class="connector">
+          ↓
+        </div>
+
+
+        <div class="row">
+
+
+          <div class="node">
+
+            <b>Summary Store</b>
+
+            <span id="n-summary">
+              ACTIVE
+            </span>
+
+          </div>
+
+
+          <div class="node">
+
+            <b>Embedding Store</b>
+
+            <span id="n-embedding">
+              ACTIVE
+            </span>
+
+          </div>
+
+
+          <div class="node">
+
+            <b>Cache</b>
+
+            <span id="n-cache">
+              ACTIVE
+            </span>
+
+          </div>
+
+
+        </div>
+
+
+        <div class="connector">
+          ↓
+        </div>
+
+
+        <div class="node downstream">
+
+          <b>Downstream Copy</b>
+
+          <span id="n-downstream">
+            ACTIVE
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <hr>
+
+
+      <div class="memory-id-box">
+
+        <span>Current memory</span>
+
+        <strong id="memoryStatus">
+          No memory created
+        </strong>
+
+      </div>
+
+
+      <!-- FIXED DELETE BUTTON -->
+
+      <button
+        id="del"
+        class="danger wide"
+        onclick="del()"
+      >
+        🗑 DELETE MY MEMORY
+      </button>
+
+
+      <small class="disclaimer">
+
+        Audit/version evidence is retained so the deletion result can be
+        tested.
+
+      </small>
+
+    </article>
+
+  </div>
+
+
+
+  <!-- ============================================================
+       VERIFICATION RESULT
+  ============================================================ -->
+
+  <article id="result" class="result hidden">
+
+    <div class="resulttop">
+
+      <div>
+
+        <label>
+          VERIFICATION RESULT
+        </label>
+
+        <h2 id="rtitle">
+          —
+        </h2>
+
+      </div>
+
+
+      <div class="scorebox">
+
+        <strong id="score">
+          0%
+        </strong>
+
+        <small>
+          deletion completeness
+        </small>
+
+      </div>
+
+    </div>
+
+
+    <div class="resultstats">
+
+      <div>
+
+        Retrieval
+
+        <strong id="retrieval">
+          —
+        </strong>
+
+      </div>
+
+
+      <div>
+
+        Residual risk
+
+        <strong id="rrisk">
+          —
+        </strong>
+
+      </div>
+
+
+      <div>
+
+        Residual stores
+
+        <strong id="rcount">
+          None
+        </strong>
+
+      </div>
+
+
+      <div>
+
+        Coverage
+
+        <strong id="rcover">
+          —
+        </strong>
+
+      </div>
+
+
+      <div>
+
+        Reviewer
+
+        <strong id="rreview">
+          —
+        </strong>
+
+      </div>
+
+    </div>
+
+
+
+    <h3>
+      Storage verification
+    </h3>
+
+    <div id="stores"></div>
+
+
+    <div id="evidence" class="evidence"></div>
+
+
+
+    <!-- ========================================================
+         INFORMATION TRACE
+    ======================================================== -->
+
+    <h3>
+      Information trace
+    </h3>
+
+    <div id="trace"></div>
+
+
+
+    <!-- ========================================================
+         HUMAN REVIEW
+    ======================================================== -->
+
+    <div id="reviewbox" class="review hidden">
+
+      <h3>
+        👤 Human review required
+      </h3>
+
+
+      <p>
+
+        <b>AI39 FINDING</b> —
+
+        residual memory was detected after simulated deletion.
+
+        AI39 reports evidence; it does not replace a high-impact
+        human decision.
+
+      </p>
+
+
+      <p id="finding"></p>
+
+
+      <input
+        id="reviewer"
+        placeholder="Reviewer name"
+      >
+
+
+      <select id="decision">
+
+        <option value="CONFIRM_FINDING">
+          Confirm finding
+        </option>
+
+        <option value="INVESTIGATE">
+          Investigate
+        </option>
+
+      </select>
+
+
+      <textarea
+        id="comments"
+        placeholder="Reviewer comments"
+      ></textarea>
+
+
+      <button
+        class="primary"
+        onclick="submitReview()"
+      >
+        Submit review
+      </button>
+
+    </div>
+
+
+
+    <div class="actions">
+
+      <button onclick="page('audit')">
+        View audit trail
+      </button>
+
+      <button onclick="report()">
+        Generate report
+      </button>
+
+    </div>
+
+  </article>
+
+</section>
+
+
+
+<!-- ============================================================
+     EVALUATION
+============================================================ -->
+
+<section id="evaluation" class="page">
+
+  <div class="head">
+
+    <div>
+
+      <label>
+        CONTROL EVALUATION
+      </label>
+
+      <h1>
+        Evaluation & failure analysis
+      </h1>
+
+      <p>
+        Metrics are calculated from labeled synthetic control scenarios.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <div class="metrics six">
+
+
+    <div>
+
+      <span>
+        Precision
+      </span>
+
+      <strong id="precision">
+        —
+      </strong>
+
+    </div>
+
+
+    <div>
+
+      <span>
+        Recall
+      </span>
+
+      <strong id="recall">
+        —
+      </strong>
+
+    </div>
+
+
+    <div>
+
+      <span>
+        True positives
+      </span>
+
+      <strong id="tp">
+        —
+      </strong>
+
+    </div>
+
+
+    <div>
+
+      <span>
+        False positives
+      </span>
+
+      <strong id="fp">
+        —
+      </strong>
+
+    </div>
+
+
+    <div>
+
+      <span>
+        True negatives
+      </span>
+
+      <strong id="tn">
+        —
+      </strong>
+
+    </div>
+
+
+    <div>
+
+      <span>
+        False negatives
+      </span>
+
+      <strong id="fn">
+        —
+      </strong>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="cols">
+
+
+    <article>
+
+      <h3>
+        Labeled test cases
+      </h3>
+
+      <div id="cases"></div>
+
+    </article>
+
+
+    <article>
+
+      <h3>
+        Failure-case analysis
+      </h3>
+
+      <div id="failures"></div>
+
+
+      <div class="notice">
+
+        These controls are synthetic.
+
+        A real deployment needs representative approved test suites
+        and independent validation.
+
+      </div>
+
+    </article>
+
+  </div>
+
+</section>
+
+
+
+<!-- ============================================================
+     AUDIT
+============================================================ -->
+
+<section id="audit" class="page">
+
+  <div class="head">
+
+    <div>
+
+      <label>
+        TRACEABILITY
+      </label>
+
+      <h1>
+        Audit trail
+      </h1>
+
+      <p>
+        Timestamped memory, deletion, verification and review events.
+      </p>
+
+    </div>
+
+
+    <button onclick="loadAudit()">
+      ↻ Refresh
+    </button>
+
+  </div>
+
+
+  <article>
+
+    <div id="timeline"></div>
+
+  </article>
+
+</section>
+
 
 </main>
 
@@ -592,4 +859,5 @@
 <script src="/app.js"></script>
 
 </body>
+
 </html>
